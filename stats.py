@@ -1,3 +1,12 @@
+def median(numlist):
+    numlist.sort()
+    length = len(numlist)
+    index = length/2
+    if length % 2 == 0:
+       return mean([numlist[index], numlist[index - 1]])
+    else:
+       return numlist[index]
+
 def mean(vals):
     """Computes the mean from a list of values."""
     try:
